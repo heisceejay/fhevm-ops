@@ -1,0 +1,47 @@
+{
+  "name": "my-fhevm-project",
+  "version": "1.0.0",
+  "description": "Confidential smart contracts using Zama FHEVM",
+  "private": true,
+  "scripts": {
+    "compile":        "hardhat compile",
+    "test":           "hardhat test",
+    "test:coverage":  "hardhat coverage",
+    "test:sepolia":   "hardhat test --network sepolia",
+    "deploy":         "hardhat run scripts/deploy.ts",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "node":           "hardhat node",
+    "clean":          "hardhat clean",
+    "typechain":      "hardhat typechain"
+  },
+  "devDependencies": {
+    "@fhevm/hardhat-plugin":                    "0.4.2",
+    "@nomicfoundation/hardhat-toolbox":         "^5.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-ethers":          "^3.0.0",
+    "@nomicfoundation/hardhat-chai-matchers":   "^2.0.0",
+    "@nomicfoundation/hardhat-verify":          "^2.0.0",
+    "@typechain/ethers-v6":                     "^0.5.0",
+    "@typechain/hardhat":                       "^9.0.0",
+    "@types/chai":                              "^4.3.0",
+    "@types/mocha":                             "^10.0.0",
+    "@types/node":                              "^20.0.0",
+    "chai":                                     "^4.3.0",
+    "hardhat":                                  "^2.22.0",
+    "hardhat-gas-reporter":                     "^1.0.0",
+    "solidity-coverage":                        "^0.8.0",
+    "ts-node":                                  "^10.9.0",
+    "typechain":                                "^8.3.0",
+    "typescript":                               "^5.4.0"
+  },
+  "dependencies": {
+    "@fhevm/solidity":                           "0.11.1",
+    "@openzeppelin/confidential-contracts":     "0.4.0",
+    "@openzeppelin/contracts":                  "^5.0.0",
+    "@zama-fhe/relayer-sdk":                    "latest",
+    "ethers":                                   "^6.13.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
